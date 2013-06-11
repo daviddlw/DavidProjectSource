@@ -1,0 +1,9 @@
+<publishData>
+  <publishTarget publishUrl="D:\DavidTest\">
+    <file relUrl="bin/DavidWCF.pdb" publishTime="02/27/2013 12:41:56" />
+    <file relUrl="DavidWCF.DavidService.svc" publishTime="02/27/2013 12:44:35" />
+    <file relUrl="bin/DavidWCF.dll.config" publishTime="02/27/2013 12:42:38" />
+    <file relUrl="Web.config" publishTime="02/27/2013 12:42:38" />
+    <file relUrl="bin/DavidWCF.dll" publishTime="02/27/2013 12:41:58" />
+  </publishTarget>
+</publishData>

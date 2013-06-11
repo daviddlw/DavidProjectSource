@@ -1,0 +1,355 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*基本元素定义开始*/
+*{ margin:0; padding:0;}
+html{ overflow-y:scroll;}
+body{font-family:Lucida Grande, Arial, Lucida, Verdana, Helvetica, 微软雅黑, Sans-Serif; font-size:12px; color:#666;background-color:#144678;}
+input, textarea, select, button{ font-family:Arial; font-size:12px;
+                                 background:url("Images/txt.gif") repeat-x scroll left top transparent;
+border:1px solid #CCCCCC;
+height:20px;
+line-height:20px;
+padding:0 2px;
+vertical-align:middle;}
+
+ul, li{list-style:none; margin:0; padding-left:0;}
+a img{border:none;}
+a{color:#3183BF; outline:none;}
+a:hover, a.focus{text-decoration:none;}
+button{ border:none;}
+.clear{clear:both;}
+/*基本元素定义结束*/
+
+/*布局元素定义开始*/
+#titlecontainer h1{display:none;}
+#header,#headercontainer{height:104px;}
+
+#headercontainer,#menucontainer,#titlecontainer, #logininfocontainer ,#crumbcontainer,#langcontainer,#maincontentcontainer,#footercontainer{margin:0 auto; width:985px;}
+#crumbcontainer{ display:none;}
+
+#header  {
+background:url("images/header_bg.gif") repeat-x scroll left top transparent;
+}
+#headercontainer{  background:url("images/hbg.jpg") no-repeat scroll center top transparent ; }
+
+#header{ color:#ccc;}
+#header a{ color:#fff; text-decoration:underline;}
+#header a:hover{ text-decoration:none;}
+
+
+/*--------------------HEADER----------------------*/
+#header img{float:left; }
+#uinfo{height:22px; line-height:22px; margin-top:6px; font-size:10px; float:right;}
+#uinfo a{ text-decoration:none;}
+
+#logininfocontainer 
+{
+    text-align:right;
+} 
+#logininfo
+{
+   padding-top:3px;
+}
+#langcontainer ul {
+float:right;
+height:32px;
+position:relative;
+
+}
+#langcontainer ul {
+float:right;
+height:32px;
+position:relative;
+
+}
+#langcontainer ul li 
+{
+list-style:none outside none;
+float:left;
+text-align:center;
+margin:3px;
+}
+
+#maincontent
+{
+    background-color:#FFFFFF;
+    padding-bottom:44px;
+}
+
+#footer
+{
+    color:#999999;
+    text-align:center;
+}
+
+#footercontainer
+{
+    padding-top:20px;
+}
+
+/**1.0
+#menucontainer #primarynav{margin-top:0; font-family:微软雅黑, Lucida Grande, Arial, Lucida, Verdana, Helvetica, Sans-Serif;}
+#menucontainer ul{width:792px; float:right; position:relative;}
+#menucontainer ul li{float:left; text-align:center; background:url(images/nav_sep.gif) right center no-repeat;}
+#menucontainer ul li a{text-decoration:none; font-size:14px; color:#999; display:block; line-height:37px; padding:0 44px 0 30px;}
+#menucontainer ul li.first a{background:url(images/nav_sep.gif) left center no-repeat; padding-left:44px;}
+#menucontainer ul li a:hover{color:#333;}
+#menucontainer ul li a.nav_selected{color:#333!important;}
+#menucontainer ul li a.on{color:#333!important;}
+
+#header .subnav{margin:0; position:absolute; display:block; float:left; background:url(images/subnav_bg.gif) left bottom no-repeat; height:29px; padding-left:6px; margin-left:-21px;}
+#header .subnav ul{background:url(images/subnav_corner.gif) right bottom no-repeat; width:auto!important; height:29px; padding-right:4px; float:left; position:static;}
+
+#menucontainer ul li ul li{background:none; height:29px; line-height:29px;}
+#menucontainer ul li ul li a{color:#999; display:block; background-color:#3e3e3e; line-height:25px; font-size:12px; margin-top:4px; padding:0 15px;}
+#menucontainer ul li.first ul li a{background:#3e3e3e; padding:0 15px;}
+#menucontainer ul li ul li a:hover{color:#fff;}
+#menucontainer ul li ul li a.nav_selected{ color:#fff!important;}*/
+
+/**2.0*/
+#menucontainer #primarynav{font-family:微软雅黑; margin-top:7px;}
+#menucontainer ul{width:792px; height:32px; float:right; background:url(images/nav_bg.jpg) left top no-repeat; position:relative;}
+#menucontainer ul li{float:left; text-align:center; background:url(images/nav_sep1.gif) right center no-repeat;}
+#menucontainer ul li a{text-decoration:none; font-size:12px; color:#fff; display:block; line-height:32px; width:132px;}
+#menucontainer ul li a:hover{background:url(images/nav_hover_bg.gif) center top no-repeat; position:relative; padding-left:1px; margin-left:-1px; z-index:2px; color:#333;}
+#menucontainer ul li a.nav_selected{background:url(images/nav_hover_bg.gif) center top no-repeat!important; margin-left:-1px!important; padding-left:1px!important; color:#333!important; position:relative; z-index:2;}
+#menucontainer ul li.final{ background:none;}
+
+#header .subnav{margin:0; position:absolute; left:0; display:block; float:left; height:29px; visibility:hidden;}
+#header .subnav ul{width:auto!important; height:29px; float:left; position:static; background:none;}
+
+#menucontainer ul li ul li{background:none; height:29px; line-height:29px; white-space:nowrap;}
+#menucontainer ul li ul li a{color:#9BDEFF; display:block; line-height:25px; font-size:12px; margin-top:4px; padding:0 15px; width:auto;}
+#menucontainer ul li ul li a:hover{color:#fff; background:none; padding:0 15px; margin-left:0;}
+#menucontainer ul li ul li a.nav_selected{ color:#fff!important; background:none!important; padding:0 15px!important; margin-left:0!important;}
+
+/*--------------------HEADER END----------------------*/
+
+#secondary_nav{width:186px; float:left; font-family:微软雅黑, Lucida Grande, Arial, Lucida, Verdana, Helvetica, Sans-Serif;}
+#secondary_nav a{ text-decoration:none;}
+#secondary_nav ul li{width:100%; text-align:left; background:#ecf2f9; border-bottom:1px solid #fff;}
+#secondary_nav ul li a{width:166px; color:#999; font-size:12px; line-height:22px; padding-left:20px; display:inline-block;}
+#secondary_nav ul li a:hover{background:#195997; color:#fff; font-size:14px; text-decoration:none;}
+#secondary_nav ul li.nav_selected a{background:#195997; color:#fff; font-size:14px;}
+
+#secondary_nav ul li ul{ padding:8px 0; background:#fff; display:none;}
+#secondary_nav ul li ul li{ background:none;}
+#secondary_nav ul li ul li a{ background:none!important; color:#999!important; font-size:12px!important; padding-left:25px; _width:161px;}
+#secondary_nav ul li ul li a:hover{ background:none; color:#333!important; font-size:12px;}
+#secondary_nav ul li ul li.nav_selected, #secondary_nav ul li ul li.nav_selected a{ color:#333!important;}
+#secondary_nav ul li ul li span{ padding-left:25px; line-height:22px;}
+#secondary_nav ul li ul li.first{ margin-top:0;}
+#secondary_nav ul li.final ul{ border-bottom:1px solid #333;}
+
+#main_content{width:792px; float:right;}
+#content_wrap {
+background-color:#FFFFFF;
+padding-bottom:44px;
+}
+
+#footer  {
+background:url("images/footer_bg.gif") repeat-x scroll left top #144678;
+}
+#footer {
+height:104px;
+}
+
+.wp1{ width:1%;}
+.wp2{ width:2%;}
+.wp3{ width:3%;}
+.wp4{ width:4%;}
+.wp5{ width:5%;}
+.wp6{ width:6%;}
+.wp7{ width:7%; }
+.wp8{ width:8% }
+.wp10{ width:10% }
+.wp11{ width:11%; }
+.wp12{ width:12%;}
+.wp13{ width:13%;}
+.wp14{ width:14%;}
+.wp15{ width:15%;}
+.select_length_50{width: 50px;}
+.select_length_120{width: 120px;}
+.tacenter{ text-align:center}
+
+/*布局元素定义结束*/
+
+
+/*定制控件定义开始*/
+
+/************button begin*********/
+.corner_wrap  {
+vertical-align:middle;
+}
+.corner_wrap, .corner_wrap span, .corner_wrap span input {
+height:23px;
+line-height:23px;
+overflow:hidden;
+}
+.corner_wrap, .corner_wrap span {
+display:inline-block;
+}
+.corner_wrap {
+padding-left:5px !important;
+}
+.corner_wrap span {
+padding-right:4px !important;
+}
+.corner_wrap span input {
+border:medium none;
+padding-right:1px;
+}
+.spnone{ display:none!important;}
+a.corner_wrap {
+color:#666666 !important;
+text-decoration:none !important;
+}
+a.corner_wrap:hover {
+text-decoration:none;
+}
+a.corner_wrap span span {
+cursor:pointer;
+padding:0 10px !important;
+}
+a.corner_wrap span span span {
+cursor:pointer;
+font-size:12px;
+font-weight:normal;
+}
+a.cursor_default {
+cursor:default;
+}
+.btn1, .btn1 span, .btn1 span span, .btn1 span span span {
+height:22px;
+line-height:22px;
+}
+.btn1 {
+background:url("Images/btn.gif") no-repeat scroll left 0 transparent;
+}
+.btn1 span {
+background:url("Images/btn.gif") no-repeat scroll right -44px transparent;
+}
+.btn1 span span {
+background:url("Images/btn.gif") repeat-x scroll left -22px transparent;
+}
+.btn1 span span span {
+padding:0 0 0 20px ;
+}
+.add {
+background:url("images/plus.gif") no-repeat scroll left center transparent !important;
+}
+.import {
+background:url("images/report.gif") no-repeat scroll left center transparent !important;
+}
+.new2 {
+background:url("images/new2.gif") no-repeat scroll left center transparent !important;
+}
+.export {
+background:url("images/export.gif") no-repeat scroll left center transparent !important;
+}
+.exportnoarrow {
+background:url("images/export.gif") no-repeat scroll left center transparent !important;
+}
+.plan {
+background:url("images/plan.gif") no-repeat scroll left center transparent !important;
+}
+.report {
+background:url("images/report.gif") no-repeat scroll left center transparent !important;
+}
+.save {
+background:url("images/save.gif") no-repeat scroll left center transparent !important;
+}
+.customer {
+background:url("images/customer.gif") no-repeat scroll left center transparent !important;
+}
+.set {
+background:url("images/set.gif") no-repeat scroll left center transparent !important;
+}
+.transfer {
+background:url("images/transfer.gif") no-repeat scroll left center transparent !important;
+}
+.search {
+background:url("images/search.gif") no-repeat scroll left center transparent !important;
+}
+span .delete {
+	background:url("images/remove.gif") no-repeat scroll left center transparent !important;
+}
+.view {
+background:url("images/view.gif") no-repeat scroll left center transparent !important;
+}
+.view2 {
+background:url("images/view2.gif") no-repeat scroll left center transparent !important;
+}
+.monitor {
+background:url("images/monitor.gif") no-repeat scroll left center transparent !important;
+}
+.upload {
+background:url("images/upload.gif") no-repeat scroll left center transparent !important;
+}
+.download {
+background:url("images/download.gif") no-repeat scroll left center transparent !important;
+}
+.go {
+background:url("images/go.gif") no-repeat scroll left center transparent !important;
+}
+.start {
+background:url("images/start.gif") no-repeat scroll left center transparent !important;
+}
+.pause {
+background:url("images/pause.gif") no-repeat scroll left center transparent !important;
+}
+.file {
+background:url("images/file.gif") no-repeat scroll left center transparent !important;
+}
+.chart {
+background:url("images/chart_pie.gif") no-repeat scroll left center transparent !important;
+}
+.exporttext {
+background:url("images/text.gif") no-repeat scroll left center transparent !important;
+}
+.edit {
+background:url("images/edit.gif") no-repeat scroll left center transparent !important;
+}
+.draft {
+background:url("images/draft.gif") no-repeat scroll left center transparent !important;
+}
+.generate {
+background:url("images/mp.gif") no-repeat scroll left center transparent !important;
+}
+.budget {
+background:url("images/budget.gif") no-repeat scroll left center transparent !important;
+}
+.go2 {
+background:url("images/go2.gif") no-repeat scroll left center transparent !important;
+}
+.toleft {
+background:url("images/btn_toleft.gif") no-repeat scroll left center transparent !important;
+}
+.toright {
+background:url("images/btn_toright.gif") no-repeat scroll left center transparent !important;
+}
+span.none{ padding-left:0px !important;}
+.down {
+background:url("images/sort_down.gif") no-repeat scroll right 10px transparent !important;
+padding:0 10px 0 0 !important;
+}
+/**********button end**********/
+
+/*定制控件定义开始*/
+.loginbtn {
+background:url("/skins/default/Images/loginbtn.gif") no-repeat scroll center center transparent;
+border:medium none;
+cursor:pointer;
+display:inline-block;
+height:18px;
+vertical-align:middle;
+width:63px;
+}
+/*定制控件定义结束*/
+
+
+/* ---------spotplan status----------*/
+.spotplan-status-complate{ background-image: url(images/spotplan-complate.png); background-position: center;  background-repeat: no-repeat; width: 100%; height:17px;}
+.spotplan-status-returns{ background-image: url(images/spotplan-returns.png); background-position: center; background-repeat: no-repeat; width: 100%; height:17px; }
+.spotplan-status-current{ background-image: url(images/spotplan-current.gif); background-position: center;  background-repeat: no-repeat; width: 100%; height:17px;}
+.spotplan-status-pass{ background-image: url(images/spotplan-pass.gif); background-position: center;  background-repeat: no-repeat; width: 100%; height:17px;}
